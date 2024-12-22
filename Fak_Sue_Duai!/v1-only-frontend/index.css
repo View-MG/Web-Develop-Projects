@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr:wght@200;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Mitr', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    padding: 20px;
+}
+
+#app-name {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4CAF50;
+}
+
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 1.5em;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#member-list li {
+    font-size: 1em;
+    padding: 5px 0;
+}
+
+#main-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #FFF;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+#main-table thead {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#main-table thead th {
+    padding: 10px;
+    text-align: left;
+    font-weight: 400;
+}
+
+#main-table tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+#main-table td {
+    padding: 10px;
+    font-size: 0.9em;
+    text-align: left;
+}
+
+#main-table tfoot input,
+#main-table tfoot select {
+    width: 100%;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#main-table tfoot button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#main-table tfoot button:hover {
+    background-color: #45a049;
+}
+
+.delete-row {
+    background-color: #ff4d4d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-row:hover {
+    background-color: #ff3333;
+}
+
+@media (max-width: 768px) {
+    #main-table {
+        font-size: 0.8em;
+    }
+
+    #app-name {
+        font-size: 2em;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    #main-table td, #main-table th {
+        padding: 5px;
+    }
+}

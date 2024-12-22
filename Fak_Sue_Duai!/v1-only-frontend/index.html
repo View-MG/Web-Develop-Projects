@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ฝากซื้อด้วย</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div id="app-container">
+        <h1 id="app-name">ฝากซื้อด้วย</h1>
+
+        <section>
+            <h2 class="section-title">รายชื่อผู้มีสิทธิฝากซื้อ</h2>
+            <ul id="member-list">
+                <li>Benedict Cumberbatch</li>
+                <li>Chadwick Boseman</li>
+                <li>Jeremy Renner</li>
+                <li>Robert Downey Jr.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="section-title">รายการฝากซื้อ</h2>
+            <table id="main-table">
+                <thead>
+                    <tr>
+                        <th>ของที่ฝากซื้อ</th>
+                        <th>ชื่อผู้ฝากซื้อ</th>
+                        <th>ราคา (บาท)</th>
+                        <th>ดำเนินการ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- ไม่มีแถวตัวอย่างเพื่อให้เริ่มต้นด้วยตารางว่าง -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><input type="text" id="item-to-add" placeholder="ของที่ฝากซื้อ"></td>
+                        <td>
+                            <select id="name-to-add">
+                                <option>Pattarapon Noonun</option>
+                                <option>Pakkapon Yotchaiyapruk</option>
+                                <option>Phathanan Jaroenphon</option>
+                                <option>Krittapat Tragoolpua</option>
+
+                            </select>
+                        </td>
+                        <td><input type="number" id="price-to-add" placeholder="ราคา (บาท)"></td>
+                        <td><button id="add-newrow">เพิ่ม</button></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section>
+            <h2 class="section-title">ยอดรวมตามชื่อผู้ฝากซื้อ</h2>
+            <p id="grand-total">รวมทั้งหมด: 0 บาท</p>
+            <ul id="totals-list">
+                <!-- รายการยอดรวมจะถูกแสดงที่นี่ -->
+            </ul>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
