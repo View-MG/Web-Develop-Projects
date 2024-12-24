@@ -71,3 +71,38 @@ document.addEventListener('scroll', function() {
       targetSection.scrollIntoView({ behavior: 'smooth' });
     });
   });
+
+
+function setupSlideshow(slideshowId, direction) {
+  const slidesElement = document.querySelector(`#${slideshowId} .slideshow-content`);
+  const totalSlides = document.querySelectorAll(`#${slideshowId} .slide-item`).length;
+  const slideHeight = 15;
+  let position = (direction === -1) ? (totalSlides - 1) * slideHeight : 0;
+  let isPaused = false;
+
+  function smoothScroll() {
+    if (!isPaused) {
+      position += 0.1 * direction;
+      if (position >= (totalSlides - 1) * slideHeight) {
+        direction = -1; // เปลี่ยนเป็นเลื่อนลงเมื่อถึงขอบบน
+      } else if (position <= 0) {
+        direction = 1; // เปลี่ยนเป็นเลื่อนขึ้นเมื่อถึงขอบล่าง
+      }
+      slidesElement.style.transform = `translateY(-${position}%)`;
+    }
+  }
+
+  const scrollInterval = setInterval(smoothScroll, 16);
+
+  const slideshowContainer = document.getElementById(slideshowId);
+  slideshowContainer.addEventListener('mouseenter', () => {
+    isPaused = true;
+  });
+  slideshowContainer.addEventListener('mouseleave', () => {
+    isPaused = false;
+  });
+}
+
+// ตั้งค่าสไลด์โชว์: slideshow1 เลื่อนขึ้น, slideshow2 เลื่อนลง
+setupSlideshow('slideshow1', 1);  // เลื่อนขึ้น
+setupSlideshow('slideshow2', -1); // เลื่อนลง
