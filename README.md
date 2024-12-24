@@ -1,2 +1,2 @@
 ## Check All Page
-https://view-mg.github.io/Web-Develop-Projects/
+<h6>[in progress](https://view-mg.github.io/Web-Develop-Projects/)</h6>
