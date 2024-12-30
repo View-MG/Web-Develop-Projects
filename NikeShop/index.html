@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้า Nike</title>
+    <link rel="icon" href="picture/nike_logo.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="navbar">
+        <img class="logo" src="picture/nike_logo.png">
+        <div class="menu">
+            <a class="option" href="index.html">HOME</a>
+            <a class="option" href="pages\mens\mens.html">MENS</a>
+            <a class="option">WOMENS</a>
+            <a class="option">KIDS</a>
+            <a class="option">CONTACT</a>
+        </div>
+        <div class="profile">
+            <img src="picture\shopping_cart.png">
+            <img src="picture\name.png">
+        </div>
+    </div>
+    <div class="background-keyword">
+        <div class="keyword">DUNK</div>
+        <div class="keyword">JORDAN</div>
+        <div class="keyword">PEGASUS</div>
+    </div>
+    <div class="item-container">
+        <div class="slideshow-container">
+            <div class="slideshow-box" id="slideshow1">
+                <div class="slide-item">
+                    <h1>Nike Dunk Low</h1>
+                    <p style="white-space: pre-line;"> 
+                        แสดงความรักที่มีต่อยุค 80 ด้วย Nike Dunk Low คู่นี้เลย 
+                        เรายกย่องไอคอนประจำคอร์ทพื้นไม้คู่นี้ด้วยการใช้โครงสร้าง
+                        ที่ทนทานสุดๆ รวมถึงสัมผัสและรูปทรงที่คลาสสิก คู่นี้จะเข้า
+                        กับคอลเลกชันรองเท้าที่คุณมีอย่างง่ายดายและพร้อมสำหรับ
+                        การลงเล่นเสมอ
+                    </p>
+                </div>
+                <img src="picture\hot_sales\NIKE_DUNK.png" alt="Image 1">
+            </div>
+            
+            <div class="slideshow-box" id="slideshow2">
+                <div class="slide-item">
+                    <h1>Air Jordan Low</h1>
+                    <p style="white-space: pre-line;">
+                        Air Jordan 1 Mid นำสไตล์เท่ล้นคอร์ทและความสบายระดับ
+                        พรีเมียมมาสู่ลุคในแบบไอคอน ด้วยระบบลดแรงกระแทก Air-
+                        Sole ที่เหมาะกับคอร์ทพื้นไม้ พร้อมส่วนหุ้มข้อบุนวมที่ให้
+                        สัมผัสแห่งการรองรับ
+                    </p>
+                </div>
+
+                <img src="picture\hot_sales\WMNS_AIR_JORDAN_MID.png" alt="Image 2">
+            </div>
+            
+            <div class="slideshow-box" id="slideshow3">
+                <div class="slide-item">
+                    <h1>Nike Pegasus</h1>
+                    <p style="white-space: pre-line;">
+                        ระบบลดแรงกระแทกที่ตอบสนองได้ดีใน Pegasus สไตล์ฤดู
+                        หนาวให้ย่างก้าวที่เปี่ยมพลังสำหรับการวิ่งบนท้องถนนใน
+                        ทุกๆ วันไม่ว่าจะกลางวันหรือกลางคืน สัมผัสการส่งแรงกลับ
+                        ที่เบากว่าเดิมด้วยส่วน Air Zoom แบบคู่และพื้นรองเท้าชั้น
+                        กลางจากโฟม ReactX นอกจากนี้ยังมีสีสะท้อนแสงที่ส่วนบน
+                        เพื่อส่องสว่างเส้นทางของคุณ
+                    </p>
+                </div>
+                <img src="picture\hot_sales\AIR_ZOOM_PEGASUS.png" alt="Image 3">
+            </div>
+        </div>
+    
+        <div class="thumbnail-container">
+            <img class="thumbnail" src="picture\hot_sales\NIKE_DUNK.png" alt="Thumbnail 1" onclick="updateSlider(0)">
+            <img class="thumbnail" src="picture\hot_sales\WMNS_AIR_JORDAN_MID.png" alt="Thumbnail 2" onclick="updateSlider(1)">
+            <img class="thumbnail" src="picture\hot_sales\AIR_ZOOM_PEGASUS.png" alt="Thumbnail 3" onclick="updateSlider(2)">
+        </div>
+    </div>
+    <div class="end-page">
+        <div>
+            <h1>Nike Shoes</h1>
+            <p style="white-space: pre-line;">Discover the latest collection of Nike 
+                shoes, blending style and performance 
+                to keep you ahead in the game.
+            </p>
+        </div>
+        <div>
+            <h1>Quick Links</h1>
+            <div>
+                <div class="selector">Home</div>
+                <div class="selector">Shop</div>
+                <div class="selector">About Us</div>
+                <div class="selector">Contact</div>
+            </div>
+        </div>
+        <div>
+            <h1>Customer Service</h1>
+            <div>
+                <div class="selector">FAQ</div>
+                <div class="selector">Shipping & Returns</div>
+                <div class="selector">Size Guide</div>
+                <div class="selector">Track Order</div>
+            </div>
+        </div>
+        <div>
+            <h1>Follow Us</h1>
+            <div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <div class="last-page">© 2024 Nike Shoes. All rights reserved.</div>
+    <script src="script.js"></script>
+</body>
+</html>
