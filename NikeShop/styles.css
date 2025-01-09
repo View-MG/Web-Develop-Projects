@@ -1,0 +1,157 @@
+body{
+    font-size: 16px;
+    color: white;
+    font-family: 'Arial';
+    padding: 0;
+    margin: 0;
+    transition: background-color 1s ease;
+}
+.navbar{
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+}
+.navbar .logo{
+    width: 150px;
+    margin-right: auto;
+}
+.menu{
+    display: flex;
+}
+.menu a{
+    text-decoration: none;
+    font-family: inherit;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+.menu a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* ความหนาของเส้นใต้ */
+    background-color: white; /* สีของเส้นใต้ */
+    transition: width 0.3s ease-in-out; /* เอฟเฟคเลื่อน */
+  }
+.menu a:hover::after {
+    width: 100%; /* เส้นใต้ขยายเต็ม */
+}
+.option{
+    margin: 25px;
+    font-weight: bold;
+}
+
+.profile img{
+    width: 35px;
+    height: auto;
+}
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.slideshow-container {
+    display: block;
+}
+
+.slideshow-box {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.keyword{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.keyword.active{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.slideshow-box.active{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    color: white;
+    overflow: hidden;
+    height: 600px;
+}
+
+.slide-item {
+    transform: translateY(-80px);
+    text-align: left;
+    margin-right: 20px;
+    flex: 1;
+}
+
+.slide-item h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.slide-item p {
+    font-size: 16px;
+    white-space: pre-line;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.slideshow-box img {
+    margin: 50px auto;
+    width: 600px;
+    height: auto;
+    border-radius: 8px;
+    transform: rotate(-30deg);
+    transition: transform 0.5s ease;
+    overflow: visible;
+    transform-origin: center center;
+    z-index: 100; 
+}
+.slideshow-box img:hover {
+    transform: rotate(330deg);
+}
+
+
+.thumbnail-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.end-page{
+    background-color: #141916;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+}
+.selector{
+    padding-bottom: 10px;
+}
+.last-page{
+    display: flex;
+    place-content: center;
+    background-color: #2b2d2c;
+    padding: 10px;
+}

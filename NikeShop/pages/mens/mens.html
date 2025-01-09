@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้า Nike</title>
+    <link rel="icon" href="../../picture/nike_logo.png">
+    <link rel="stylesheet" href="men-styles.css">
+</head>
+<body>
+    <nav id="nav">
+        <div class="navbar">
+            <img class="logo" src="../../picture/nike-logo-black.png">
+            <div class="menu">
+                <a class="option" href="../../index.html">HOME</a>
+                <a class="option" href="mens.html">MENS</a>
+                <a class="option">WOMENS</a>
+                <a class="option">KIDS</a>
+                <a class="option">CONTACT</a>
+            </div>
+            <div class="profile">
+                <img src="picture\shopping_cart.png">
+                <img src="picture\name.png">
+            </div>
+        </div>
+        <div class="find-bar">
+            <div class="banner-bar">
+                <button id="PrevBtn" class="nav-btn" onclick="plusDivs(-1)">&#10094;</button>
+                <div class="info">
+                    <div class="banner" id="banner1">เพลิดเพลินไปกับส่วนลดจาก Nike! กับส่วนลด 10% ใช้เลย! ใช้โค้ด NIKE888</div>
+                    <div class="banner" id="banner2">เคลื่อนไหว เลือกซื้อ ออกแบบเอง และเฉลิมฉลองไปกับเรา</div>
+                    <div class="banner" id="banner3">จัดส่งฟรีแบบมาตรฐาน & คืนสินค้าฟรี 30 วัน</div>
+                </div>  
+                <button id="NextBtn" class="nav-btn" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." />
+                <button>🔍</button>
+            </div>
+        </div>
+    </nav>
+    <div id="side">
+        <div class="-title">
+            <div class="expand-select" onclick="toggleExpand(0)">
+                <div class="-text" id="text">ลดราคา & ข้อเสนอ <br>พิเศษ</div>
+                <div class="toggle-button" id="button-v">
+                    <div class="arm left-arm"></div>
+                    <div class="arm right-arm"></div>
+                </div>
+            </div>
+            <div class="dropdown-content" id="expand-nav">
+                <label><input type="checkbox" />ลดสูงสุดถึง 45%</label>
+                <label><input type="checkbox" />ล้างสต๊อก</label>
+            </div>
+        </div>
+        <div class="-title">
+            <div class="expand-select" onclick="toggleExpand(1)">
+                <div class="-text" id="text">Product Discounts</div>
+                <div class="toggle-button" id="button-v">
+                    <div class="arm left-arm"></div>
+                    <div class="arm right-arm"></div>
+                </div>
+            </div>
+            <div class="dropdown-content" id="expand-nav">
+                <label><input type="checkbox" /> ลด 40% ขึ้นไป</label>
+                <label><input type="checkbox" /> ลด 30% ขึ้นไป</label>
+                <label><input type="checkbox" /> ลด 10% ขึ้นไป</label>
+            </div>
+        </div>
+        <div class="-title">
+            <div class="expand-select" onclick="toggleExpand(2)">
+                <div class="-text" id="text">เลือกซื้อตามราคา</div>
+                <div class="toggle-button" id="button-v">
+                    <div class="arm left-arm"></div>
+                    <div class="arm right-arm"></div>
+                </div>
+            </div>
+            <div class="dropdown-content" id="expand-nav">
+                <label><input type="checkbox" /> ฿2,000 ลงไป</label>
+                <label><input type="checkbox" /> ฿2,000 - ฿4,000</label>
+                <label><input type="checkbox" /> ฿4,000 - ฿8,000</label>
+                <label><input type="checkbox" /> ฿8,000 - ฿12,000</label>
+                <label><input type="checkbox" /> ฿12,000 ขึ้นไป</label>
+            </div>
+        </div>
+        <div class="-title">
+            <div class="expand-select" onclick="toggleExpand(3)">
+                <div class="-text" id="text">สี</div>
+                <div class="toggle-button" id="button-v">
+                    <div class="arm left-arm"></div>
+                    <div class="arm right-arm"></div>
+                </div>
+            </div>
+            <div class="dropdown-content" id="expand-nav">
+                <label><input type="checkbox" /> น้ำเงิน</label>
+                <label><input type="checkbox" /> น้ำตาล</label>
+                <label><input type="checkbox" /> เทา</label>
+                <label><input type="checkbox" /> ขาว</label>
+                <label><input type="checkbox" /> หลายสี</label>
+            </div>
+        </div>
+        <div class="-title">
+            <div class="expand-select" onclick="toggleExpand(4)">
+                <div class="-text" id="text">คอลเลคชั่น</div>
+                <div class="toggle-button" id="button-v">
+                    <div class="arm left-arm"></div>
+                    <div class="arm right-arm"></div>
+                </div>
+            </div>
+            <div class="dropdown-content" id="expand-nav">
+                <label><input type="checkbox" /> Nike Motiva</label>
+                <label><input type="checkbox" /> Nike P-6000</label>
+                <label><input type="checkbox" /> Nike V2K</label>
+                <label><input type="checkbox" /> Winflo</label>
+            </div>
+        </div>
+    </div>  
+    
+    <div id="content">
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4c816471-622e-4b88-9ec5-1d3c3910d1bf/NIKE+RUN+SWIFT+3.png" alt="Product 1" class="product-img main-img">
+            <h3>Nike Run Swift 3</h3>
+            <p class="basic-details">รองเท้าวิ่งโร้ดรันนิ่งผู้ชาย</p>
+            <p class="basic-details">฿2,700</p>
+            <p class="additional-details">Additional details about Product 2</p>
+            <p class="additional-details">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4c816471-622e-4b88-9ec5-1d3c3910d1bf/NIKE+RUN+SWIFT+3.png" alt="Product 1 Image 1" class="small-img">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/c0771b85-e0e2-4141-a870-573e3f29de42/NIKE+RUN+SWIFT+3.png" alt="Product 1 Image 2" class="small-img">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/b53e7394-ee2d-43b3-8579-1208f26c7d56/NIKE+RUN+SWIFT+3.png" alt="Product 1 Image 3" class="small-img">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/71b7e004-9708-41fd-81c8-3fd22233069f/NIKE+RUN+SWIFT+3.png" alt="Product 1 Image 4" class="small-img">
+            </p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/db805bd7-5809-4b67-be5d-84b98e2c2ac5/NIKE+C1TY.png" alt="Product 2" class="product-img main-img">
+            <h3>Nike C1TY</h3>
+            <p class="basic-details">Basic details about Product 2</p>
+            <p class="basic-details">Price: $20</p>
+            <p class="additional-details">Additional details about Product 2</p>
+            <p class="additional-details">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/db805bd7-5809-4b67-be5d-84b98e2c2ac5/NIKE+C1TY.png" alt="Product 1 Image 1" class="small-img">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/aaebfafa-c137-495e-acd3-223be66de75b/NIKE+C1TY.png" alt="Product 1 Image 2" class="small-img">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/a00ddf4a-0378-4189-a4fc-09f1a92439aa/NIKE+C1TY.png" alt="Product 1 Image 3" class="small-img">
+                <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/bfb226ee-c838-4d28-b2fa-e2b3e6be6233/NIKE+C1TY.png" alt="Product 1 Image 4" class="small-img">
+            </p>
+        </a>
+        <a href="next_page.html" class="product ">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/fdef08d5-ddf9-493e-8e27-8aab37447b78/NIKE+DUNK+LOW+RETRO.png" alt="Product 3" class="product-img main-img">
+            <h3>Nike Dunk Low Retro</h3>
+            <p>Basic details about Product 3</p>
+            <p>Price: $30</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/630e06ec-b2da-4a41-bd47-c7d2e5fbdf3b/NIKE+ZOOM+VOMERO+5+NBHD.png" alt="Product 4" class="product-img main-img">
+            <h3>Product 4</h3>
+            <p>Basic details about Product 4</p>
+            <p>Price: $40</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/d92dd77c-1578-4b35-a7c8-8a2f81b176a9/AIR+JORDAN+4+RM.png" alt="Product 5" class="product-img main-img">
+            <h3>Product 5</h3>
+            <p>Basic details about Product 5</p>
+            <p>Price: $50</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/202d540b-5aa9-4d60-9c9a-86475b81d34d/KILLSHOT+2+LEATHER.png" alt="Product 6" class="product-img main-img">
+            <h3>Product 6</h3>
+            <p>Basic details about Product 6</p>
+            <p>Price: $60</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/ec2b2eb3-a34f-4411-a6d9-fc218ef848ef/LEGEND+10+CLUB+FG%2FMG.png" alt="Product 7" class="product-img main-img">
+            <h3>Product 7</h3>
+            <p>Basic details about Product 7</p>
+            <p>Price: $70</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/50ea5d8e-6c15-43ea-80d6-73156db9657e/NIKE+AIR+MAX+1+%2786+OG+G.png" alt="Product 8" class="product-img main-img">
+            <h3>Product 8</h3>
+            <p>Basic details about Product 8</p>
+            <p>Price: $80</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d3bbbc21-03a4-46c6-adc1-3066a1ea7e96/NIKE+CALM+SLIDE.png" alt="Product 9" class="product-img main-img">
+            <h3>Product 9</h3>
+            <p>Basic details about Product 9</p>
+            <p>Price: $90</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/6622a0dd-743e-4c7f-9dec-5e192daa56b3/AIR+JORDAN+1+RETRO+LOW+OG+CNY.png" alt="Product 10" class="product-img main-img">
+            <h3>Product 10</h3>
+            <p>Basic details about Product 10</p>
+            <p>Price: $100</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/25661a5b-be08-4e6e-bddf-550a4f23d32c/AIR+JORDAN+12+RETRO.png" alt="Product 11" class="product-img main-img">
+            <h3>Product 11</h3>
+            <p>Basic details about Product 11</p>
+            <p>Price: $110</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f153b4e4-9069-44ae-bf86-f70ae8ecbaa1/W+AIR+FORCE+1+%2707+FLYEASE.png" alt="Product 12" class="product-img main-img">
+            <h3>Product 12</h3>
+            <p>Basic details about Product 12</p>
+            <p>Price: $120</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/641c2ad1-800d-469a-9b5b-55b69ec6be60/PHANTOM+LUNA+II+ELITE+FG.png" alt="Product 13" class="product-img main-img">
+            <h3>Product 13</h3>
+            <p>Basic details about Product 13</p>
+            <p>Price: $130</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4ee1d6f1-5efc-4e2a-84a6-7e40b02de73d/NIKE+ZOOM+VOMERO+5.png" alt="Product 14" class="product-img main-img">
+            <h3>Product 14</h3>
+            <p>Basic details about Product 14</p>
+            <p>Price: $140</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/2862b680-2e59-4bb1-985b-0eb4074c5d3b/NIKE+PEGASUS+TRAIL+5+GTX.png" alt="Product 15" class="product-img main-img">
+            <h3>Product 15</h3>
+            <p>Basic details about Product 15</p>
+            <p>Price: $150</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5351ec85-027b-4421-a45c-3f47dfac60a9/PEGASUS+PLUS.png" alt="Product 16" class="product-img main-img">
+            <h3>Product 16</h3>
+            <p>Basic details about Product 16</p>
+            <p>Price: $160</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5a9a19a2-0915-4b69-84e2-02dc3a735c1d/AIR+FORCE+1+SP.png" alt="Product 17" class="product-img main-img">
+            <h3>Product 17</h3>
+            <p>Basic details about Product 17</p>
+            <p>Price: $170</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f8dfa191-60b3-44c1-b730-b25e0a908c35/AIR+FORCE+1+%2707+FLYEASE.png" alt="Product 18" class="product-img main-img">
+            <h3>Product 18</h3>
+            <p>Basic details about Product 18</p>
+            <p>Price: $180</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e3cc2305-65bb-4824-b4bd-9474386f6656/WMNS+NIKE+P-6000.png" alt="Product 19" class="product-img main-img">
+            <h3>Product 19</h3>
+            <p>Basic details about Product 19</p>
+            <p>Price: $190</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e3cc2305-65bb-4824-b4bd-9474386f6656/WMNS+NIKE+P-6000.png" alt="Product 20" class="product-img main-img">
+            <h3>Product 20</h3>
+            <p>Basic details about Product 20</p>
+            <p>Price: $200</p>
+        </a>
+        <a href="next_page.html" class="product">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/ab3ec819-7808-4cd8-ba1c-b1e9386c8540/AIR+JORDAN+1+LOW.png" alt="Product 21" class="product-img main-img">
+            <h3>Product 21</h3>
+            <p>Basic details about Product 21</p>
+            <p>Price: $200</p>
+        </a>
+        
+    </div>    
+    <script src="script.js"></script> 
+</body>
+</html>
